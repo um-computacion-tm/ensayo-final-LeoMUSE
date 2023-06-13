@@ -32,8 +32,7 @@ class MyTest(unittest.TestCase):
         self.dispositivo_1 = Dispositivo(1, "teclado", "genius")
         self.dispositivo_2 = Dispositivo(2, "mouse", "logitech")
         self.dispositivo_3 = Dispositivo(diccionario=dispositivo_3)
-        self.dispositivo_4 = Dispositivo(
-            4, "placa de red", tipo="wireless", marca="tp-link")
+        self.dispositivo_4 = Dispositivo(4, "placa de red", tipo="wireless", marca="tp-link")
 
     def compare_dispositivos(self, dispositivo_1: Dispositivo, dispositivo_2: Dispositivo):
         if dispositivo_1.id != dispositivo_2.id:
